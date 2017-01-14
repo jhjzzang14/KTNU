@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="10"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#660000"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:text="이전"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="중고책 팝니다"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/title"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:background="#11888888"
+        >
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비만인"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-11-21"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/lookup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회:12"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        >
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an  BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License."
+        android:padding="10dp"
+        />
+</ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#660000"
+        >
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="하트 : 9"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="30dp"
+            android:layout_alignTop="@+id/reply"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="112dp" />
+        <TextView
+            android:id="@+id/reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="댓글 : 12"
+        android:textSize="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+            android:layout_toLeftOf="@+id/like"
+        />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

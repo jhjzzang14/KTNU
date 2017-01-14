@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ktnuApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string-array name="array">
+        <item>삽니다</item>
+        <item>팝니다</item>
+        <item>교환합니다</item>
+        <item>기부합니다</item>
+    </string-array>
+</resources>
