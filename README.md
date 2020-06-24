@@ -1,15 +1,15 @@
 # KTNU_Android
 
-#Main Content
+# Main Content
 1.Login : login,join,findId<br>
 2.Board : Read,Create,Delete,Update<Br>
 3.Board_Reply : Read,Create,Delete,Update<br>
 
-#Use
+# Use
 1.app\src\main\java\com\ktnu\ktnuapp\Retrofit\RetrofitService.java  #url update <br>
 2.Run<br>
 
-#Update Expected
+# Update Expected
 1.사용자권한<br>
 2.Realm사용<br>
 3.UI변경(Material)<Br>
